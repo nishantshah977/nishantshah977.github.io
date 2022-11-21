@@ -1,46 +1,94 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap');
-html{
-    font-family: 'Montserrat', sans-serif;
+#spinner{
+    height:100%;
+    width:100%;
+    background-color:#C5D3D9;
+    position:fixed;
+    align-content:center;
+    text-align:center;
 }
-#loading{
-    background-color: white;
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
+meter{
+    width:70%;
+    height:30px;
 }
-#head{ 
-background:url('https://nishantshah977.github.io/img/cover1.jpg');
+*{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color:#A6977B;
+    }
+#nav{
+    background-color:#C5D3D9;
+    width:100%;
+    text-align:center;
+}
+.name{
+    color:black;
+    font-size:30px;
+    font-family:sans-serif;
+    font-weight:bold;
+}
+nav .material-symbols-outlined{
+    float:right;
+    margin-right:30px;
+    font-size:30px;
+    font-weight:bold;
+}
+#main{
+    background-image:url('img/background.jpg');
     background-size:cover;
-    background-repeat: no-repeat;
-   text-align:center;
-     background-position: top center;
-    position: relative;
-    z-index: 1;
+    background-repeat:none;
+    display:block;
+  
 }
-#head h1{ 
-    color:white;
-    font-family:cursive;
+.qouet{
+display:inline-block;
+margin-top:40px;
+font-size:30px;
+font-weight:bold;
+margin-right:20px;
+color:white;
 }
-#service{
-    margin:20px;
-}
-#btn{
+#main button{
+    text-align:center;
+    border:red solid 2px;
     background-color: transparent;
-    color:white;
+    height:50px;
+    width:200px;
+    font-weight:bold;
+    font-size:20px;
+    color:aqua;
+    margin: 20px 0px 20px 0px;
 }
-#btn::first-letter{
+
+.img{
+    border-radius:100px;
+    margin-top:20px;
+    box-shadow:2px 2px 2px 2px #56593C;
+}
+.hlo{
     font-size:25px;
+    margin-left:15px;
+    word-spacing:2px;
+}
+.fname{
     color:red;
-}
-#btn:hover{
-    background-color:black;
-}
-footer{
-    color:white;
-}
-footer i{
     font-size:50px;
+    margin-left:15px;
+    font-family:serif;
+}
+.box{
+    color:white;
+    margin-top:50px;
+    align-content:center;
+    text-align:center;
+    display:block;
+}
+.boxContent{
+    width:70%;
+    display:inline-block;
+    padding-top: 30px;
+   padding: 30px;
+  background-color:#1B2616;
+  
 }
