@@ -279,6 +279,9 @@ meter{
     grid-template-rows:auto;
     align-items:center;
     row-gap:30px;
+text-align:center;
+    justify-content:center;
+    align-content:center;
 }
 
 .Cimg{
