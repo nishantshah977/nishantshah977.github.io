@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,37 +10,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<!-- Font Awesome 5.15.1 CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
     <meta name="viewport" content="width=device-width">
 </head>
 <body>
-    <div id="spinner">
-       <div class="spin">
-          <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
-<lord-icon
-    src="https://cdn.lordicon.com/akuwjdzh.json"
-    trigger="loop"
-    colors="primary:#121331"
-    state="loop"
-    style="width:250px;height:250px">
-</lord-icon>
-<br>
-<meter class="meter" max="100"></meter>
-<br>
-<h1>Please Wait..</h1>
-       </div>
-    </div>
-    
-    
-    
+  
     <nav id="nav">
             <br>
         <span class="name">Nishant Shah</span>
         
-        <span class="material-symbols-outlined">
+        <span class="material-symbols-outlined" onclick="document.querySelector('#navc').style.display='block';">
 menu
 </span>
 <br>
 <br>
+<div id="navc">
+    <br>
+  <button class="close" onclick="document.querySelector('#navc').style.display='none';">×</button>
+    <br>
+   <li><a href="#">Home</a></li>
+   <li><a href="#about">About</a></li>
+   <li><a href="#skills">Skills</a></li>
+   <li><a href="#certificates">Certificates</a></li>
+   <li><a href="projects.html">Projects</a></li>
+   <li><a href="#contact">Contact</a></li>
+   <br>
+</div>
 </nav>
 <!-- Nav End -->
 <center>
@@ -50,14 +47,16 @@ menu
 </div>
 <!-- Main End -->
 
-<img class="img" src="img/profile-pic.png" height="200" width="200">
+<img class="img" src="img/profile.jpg" height="200" width="200">
 </center>
+<div id="hi">
 <span class="hlo">Hi, I'm</span>
 <br>
 <span class="fname">Nishant Shah</span> 
+</div>
 <!-- Intro End -->
 
-<div class="box">
+<div class="box" id="about">
     <div class="boxContent">
     <h2>About <span style="color:#A6945D;">Me</span></h2><br>
     <p align="justify">
@@ -67,7 +66,121 @@ menu
 </div>    
 <!-- About End -->
 
+<div class="box" id="skills">
+    <div class="boxContent">
+    <h2>Technology I'm <span style="color:#A6945D;">familiar </span> with</h2><br>
+    <p align="justify">
+<li>HTML 5
+<br>
+<meter max="100" value="90"></meter>
+</li>
 
-<script src="script.js"></script>
+<li>Wordpress
+<br>
+<meter max="100" value="90"></meter>
+</li>
+
+<li>JavaScript 
+<br>
+<meter max="100" value="85"></meter>
+</li>
+
+<li>CSS 3
+<br>
+<meter max="100" value="70"></meter>
+</li>
+
+<li>Bootstrap
+<br>
+<meter max="100" value="70"></meter>
+</li>
+
+<li>QBASIC
+<br>
+<meter max="100" value="65"></meter>
+</li>
+
+<li>PHP
+<br>
+<meter max="100" value="60"></meter>
+</li>
+
+<li>C++
+<br>
+<meter max="100" value="60"></meter>
+</li>
+
+<li>C
+<br>
+<meter max="100" value="50"></meter>
+</li>
+    </p>
+    </div>
+</div>    
+
+
+<!-- Skills End -->
+
+
+<div class="box" id="certificates">
+    <div class="boxContent">
+    <h2>Certi<span style="color:#A6945D;">fication</span></h2><br>
+    <div id="imgc">
+        <img class="Cimg" height="200" width="250" src="https://nishantshah977.github.io/img/JavaScript_certificate.jpg" alt="JavaScript">
+  
+  <img class="Cimg" height="200" width="250" src="https://nishantshah977.github.io/img/CSS_certificate.jpg" alt="CSS">
+  
+  
+  <img class="Cimg" height="200" width="250" src="https://nishantshah977.github.io/img/HTML_certificate.jpg" alt="HTML">
+ 
+  <img class="Cimg" height="200" width="250" src="https://nishantshah977.github.io/img/Responsive-Web-Design_certificate.jpg" alt="Responsive Web Design">
+ 
+ 
+  <img class="Cimg" height="200" width="250" src="https://nishantshah977.github.io/img/coding-marketers_certificate.jpg" alt="Coding for Marketers">
+  
+  <img class="Cimg" height="200" width="250" src="https://nishantshah977.github.io/img/web-dev-basics_certificate.jpg" alt="Web Development Basics">
+ 
+  </div>
+    </div>
+</div>
+
+
+<!-- Certification End -->
+
+<br>
+
+<center>    
+<a href="projects.html"><button class="btn">My Projects</button></a>
+</center>
+
+<!-- Project Button End -->
+
+<footer id="contact">
+    <br>
+    <h3 align="center">Contact</h3>
+    <br>
+    <div class="wrapper">
+  <a href="https://facebook.com/nepalinishantshah" class="icon facebook">
+    <div class="tooltip">Facebook</div>
+    <span><i class="fab fa-facebook-f"></i></span>
+  </a>
+  <a href="https://twitter.com/geekhelper977" class="icon twitter">
+    <div class="tooltip">Twitter</div>
+    <span><i class="fab fa-twitter"></i></span>
+  </a>
+  <a href="https://instagram.com/nis_hantshah" class="icon instagram">
+    <div class="tooltip">Instagram</div>
+    <span><i class="fab fa-instagram"></i></span>
+  </a>
+  <a href="https://github.com/nishantshah977" class="icon github">
+    <div class="tooltip">Github</div>
+    <span><i class="fab fa-github"></i></span>
+  </a>
+</div>
+<hr>
+<br>
+Copyright &copy; Nishant Shah
+<br>
+</footer>
 </body>
 </html>
